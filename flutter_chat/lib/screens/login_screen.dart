@@ -62,12 +62,11 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              TextButton(
-                style: TextButton.styleFrom(
-                  foregroundColor: AppColors.font.withOpacity(0.7),
+              Text(
+                'Or sign in with',
+                style: TextStyle(
+                  color: AppColors.font.withOpacity(0.7),
                 ),
-                child: const Text('Or sign in with'),
-                onPressed: () {},
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.7,
