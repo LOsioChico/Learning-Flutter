@@ -34,7 +34,7 @@ class ProfilePopupMenu extends StatelessWidget {
   onSelected(ProfileMenu result, BuildContext context) {
     switch (result) {
       case ProfileMenu.editProfile:
-        Navigator.of(context).pushReplacementNamed('/edit-profile');
+        Navigator.of(context).pushNamed('/edit-profile');
         break;
       case ProfileMenu.logout:
         Navigator.of(context).pushReplacementNamed('/login');
