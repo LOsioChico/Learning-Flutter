@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat/widgets/custom_app_bar.dart';
 
 import 'package:flutter_chat/widgets/post.dart';
 
@@ -17,18 +18,12 @@ class _HomeScreenState extends State<HomeScreen> {
     _mockPosts();
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Padding(
-          padding: EdgeInsets.only(left: 12),
-          child: Text('Flutter Chat'),
-        ),
+      appBar: CustomAppBar(
+        title: 'Flutter Chat',
         actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12),
-            child: IconButton(
-              icon: const Icon(Icons.location_on_outlined),
-              onPressed: () {},
-            ),
+          IconButton(
+            icon: const Icon(Icons.location_on_outlined),
+            onPressed: () {},
           ),
         ],
       ),
