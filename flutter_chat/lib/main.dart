@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_chat/screens/home_screen.dart';
 import 'package:flutter_chat/screens/login_screen.dart';
+import 'package:flutter_chat/screens/main_screen.dart';
 import 'package:flutter_chat/styles/app_colors.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class FlutterChat extends StatelessWidget {
       title: 'Flutter Chat',
       debugShowCheckedModeBanner: false,
       routes: {
-        '/home': (context) => const HomeScreen(),
+        '/main': (context) => const MainScreen(),
         '/login': (context) => const LoginScreen(),
       },
       initialRoute: '/login',
