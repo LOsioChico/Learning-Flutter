@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_chat/widgets/bottom_navigation.dart';
 import 'package:flutter_chat/widgets/post.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -37,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
       ),
-      bottomNavigationBar: const BottomNavigation(),
     );
   }
 
