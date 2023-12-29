@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_chat/constants/pages.dart';
+import 'package:flutter_chat/constants/main_screen_routes.dart';
 import 'package:flutter_chat/styles/app_colors.dart';
 
 class MainScreen extends StatefulWidget {
@@ -16,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: pages[_currentIndex].page,
+      body: mainScreenRoutes[_currentIndex].page,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) => setState(() => _currentIndex = index),
