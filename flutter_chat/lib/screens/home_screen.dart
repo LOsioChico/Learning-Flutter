@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
         child: ListView.separated(
           separatorBuilder: (context, index) => const SizedBox(height: 20),
           itemCount: _posts.length,
