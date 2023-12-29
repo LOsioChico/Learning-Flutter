@@ -18,11 +18,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Chat'),
+        title: const Padding(
+          padding: EdgeInsets.only(left: 12),
+          child: Text('Flutter Chat'),
+        ),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.location_on_outlined),
-            onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.only(right: 12),
+            child: IconButton(
+              icon: const Icon(Icons.location_on_outlined),
+              onPressed: () {},
+            ),
           ),
         ],
       ),
