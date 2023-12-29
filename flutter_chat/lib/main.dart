@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat/screens/edit_profile_screen.dart';
 
 import 'package:flutter_chat/screens/login_screen.dart';
 import 'package:flutter_chat/screens/main_screen.dart';
@@ -19,6 +20,7 @@ class FlutterChat extends StatelessWidget {
       routes: {
         '/main': (context) => const MainScreen(),
         '/login': (context) => const LoginScreen(),
+        '/edit-profile': (context) => const EditProfileScreen(),
       },
       initialRoute: '/login',
       theme: ThemeData(
