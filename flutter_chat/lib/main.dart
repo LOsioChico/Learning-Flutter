@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_chat/screens/home_screen.dart';
 import 'package:flutter_chat/screens/login_screen.dart';
 import 'package:flutter_chat/styles/app_colors.dart';
 
@@ -14,14 +15,33 @@ class FlutterChat extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Chat',
+      debugShowCheckedModeBanner: false,
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/login': (context) => const LoginScreen(),
+      },
+      initialRoute: '/login',
       theme: ThemeData(
         fontFamily: 'Urbanist',
         useMaterial3: true,
         scaffoldBackgroundColor: AppColors.background,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const SafeArea(
-        child: LoginScreen(),
+        platform: TargetPlatform.iOS,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.background,
+          foregroundColor: AppColors.font,
+          shadowColor: AppColors.background,
+          centerTitle: false,
+          elevation: 2,
+          titleTextStyle: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w900,
+            color: AppColors.font,
+          ),
+          actionsIconTheme: IconThemeData(
+            color: AppColors.font,
+            size: 28,
+          ),
+        ),
       ),
     );
   }
